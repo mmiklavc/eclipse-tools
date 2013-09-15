@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="UnitTest Template" enabled="true" name="newUnitTest">package ${enclosing_package};
+
+import static org.hamcrest.Matchers.*;
+import static org.junit.Assert.*;
+
+import org.junit.*;
+import org.mockito.*;
+
+public class ${primary_type_name} {
+
+    @Mock private String somevar;
+
+    @Before
+    public void setup() {
+        MockitoAnnotations.initMocks(this);
+    }
+
+    @Test
+    public void test() throws Exception {        
+        assertThat(false, equalTo(true));
+        fail("Not yet implemented");
+    }
+
+}
+</template></templates>
